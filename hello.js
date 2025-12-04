@@ -1,2 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var client_1 = require("./gestionBancaire/client");
+var compteCourant_1 = require("./gestionBancaire/compteCourant");
 var tsMessage = "Hello World !";
 console.log(tsMessage);
+var compte1 = new compteCourant_1.default(1, 1000, 500);
+var client1 = new client_1.default(1);
+client1.associerCompte(compte1);
+compte1.crediter(200);
+compte1.debiter(500);
+compte1.debiter(800);

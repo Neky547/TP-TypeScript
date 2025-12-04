@@ -1,7 +1,10 @@
-class CompteCourant{
+import Operation from "./operation";
+
+export default class CompteCourant{
     numCompte: number;
     solde: number;
     limiteDecouvert: number;
+    historique: Array<Operation> = [];
 
     constructor(numCompte: number, solde: number, limiteDecouvert: number){
         this.numCompte = numCompte;

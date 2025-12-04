@@ -1,4 +1,6 @@
-class Personne extends Client{
+import Client from "./client";
+
+export default class Personne extends Client{
     nom: String;
     prenom: String;
     dateNaissance: String;

@@ -1,4 +1,6 @@
-class Client{
+import CompteCourant from "./compteCourant";
+
+export default class Client{
     idClient: number;
     comptes: Map<number, CompteCourant>;
 
